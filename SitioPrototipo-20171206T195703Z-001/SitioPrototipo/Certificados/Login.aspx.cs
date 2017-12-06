@@ -14,10 +14,10 @@ public partial class Login : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        if ( (txtUser.Text.Equals("Admin")) && (txtPsw.Text.Equals("Prueba1")) ) //Validar credenciales de Administrador
+        if ( (txtUser.Text.Equals("Admin")) && (txtPsw.Text.Equals("Prueba1")) ) //Validar credenciales de Administrador sin conexion a la base
             Response.Redirect("AdminPrincipal.aspx");
 
-        if (txtUser.Text.Equals("Cliente") && txtPsw.Text.Equals("Prueba1")) //Validar credenciales de Usuario
+        if (txtUser.Text.Equals("Cliente") && txtPsw.Text.Equals("Prueba1")) //Validar credenciales de Usuario sin conexion a la base
             Response.Redirect("CatalogoLogeado.aspx");
     }
 
